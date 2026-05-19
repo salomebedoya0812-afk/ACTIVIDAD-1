@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Origen Bar de Autor | Proyecto con errores</title>
   <!-- ERROR 01: la ruta real del archivo es css/styles.css -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="navbar" aria-label="Navegación principal">
       <!-- ERROR 02: la carpeta correcta es assets/img/ -->
-      <img class="logo" src="assets/image/logo-origen.svg" alt="Logo Origen Bar de Autor">
+      <img class="logo" src="assets/img/logo-origen.svg" alt="Logo Origen Bar de Autor">
       <ul class="nav-links">
         <li><a href="#inicio">Inicio</a></li>
         <!-- ERROR 03: no existe una sección con id menu; la sección se llama carta -->
-        <li><a href="#menu">Carta</a></li>
+        <li><a href="#carta">Carta</a></li>
         <li><a href="#experiencia">Experiencia</a></li>
         <li><a href="#reservas">Reservas</a></li>
       </ul>
@@ -26,12 +26,12 @@
     <section id="inicio" class="hero">
       <img class="hero-bg" src="assets/img/hero-bar.svg" alt="Interior ilustrado de un bar elegante">
       <!-- ERROR 04: la clase correcta para el CSS es hero-content -->
-      <div class="hero-contnet">
+      <div class="hero-content">
         <span class="eyebrow">Medellín · Speakeasy moderno</span>
         <h1>Origen Bar de Autor</h1>
         <p>Cocteles con ingredientes locales, tapas creativas y una atmósfera íntima para conversaciones memorables.</p>
         <!-- ERROR 05: la función correcta en JS se llama reservarMesa -->
-        <button class="btn primary" onclick="reservaMesa()">Reservar una mesa</button>
+        <button class="btn primary" onclick="reservarMesa()">Reservar una mesa</button>
         <a class="btn ghost" href="#carta">Ver carta</a>
       </div>
     </section>
@@ -44,7 +44,7 @@
       </div>
       <div class="menu-grid">
         <article class="menu-card featured">
-          <img src="assets/img/coctel-aurora.svg" alt="Cóctel Aurora de Café">
+          <img src="assets/img/coctel-aurora.jpg" alt="Cóctel Aurora de Café">
           <div>
             <h3>Aurora de Café</h3>
             <p>Cold brew, naranja ahumada, miel de panela y espuma especiada.</p>
@@ -90,13 +90,13 @@
         <p>El formulario debe validar nombre, teléfono y número de personas.</p>
       </div>
       <!-- ERROR 06: el JS busca reservationForm -->
-      <form id="reservationFormm" class="booking-form">
+      <form id="reservationForm" class="booking-form">
         <label>Nombre completo
           <input id="nombre" type="text" placeholder="Ej: Mariana López" required>
         </label>
         <label>Teléfono
           <!-- ERROR 07: el JS busca telefono -->
-          <input id="phone" type="tel" placeholder="3001234567" required>
+          <input id="telefono" type="tel" placeholder="3001234567" required>
         </label>
         <label>Personas
           <input id="personas" type="number" min="1" max="8" value="2" required>
@@ -115,6 +115,6 @@
   </footer>
 
   <!-- ERROR 08: la ruta real es js/app.js -->
-  <script src="js/main.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

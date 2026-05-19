@@ -1,7 +1,7 @@
 // Archivo con errores intencionales para la actividad "Caza errores".
 
 // ERROR 12: falta cerrar la cadena de texto. Esto rompe todo el JavaScript.
-const nombreBar = "Origen Bar de Autor;
+const nombreBar = "Origen Bar de Autor";
 
 const year = document.getElementById("year");
 year.textContent = new Date().getFullYear();

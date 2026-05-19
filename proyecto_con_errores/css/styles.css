@@ -109,7 +109,7 @@ body {
 }
 .primary {
   /* ERROR 09: la variable definida arriba se llama --gold */
-  background: linear-gradient(135deg, var(--dorado), var(--coral));
+  background: linear-gradient(135deg, var(--gold), var(--coral));
   color: #140f0c;
 }
 .ghost {

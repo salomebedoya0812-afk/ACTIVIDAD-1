@@ -54,7 +54,7 @@ actividad10_bar/
 │       └── img/
 │           ├── logo-origen.svg
 │           ├── hero-bar.svg
-│           ├── coctel-aurora.svg
+│           ├── coctel-aurora.jpg
 │           ├── tabla-tapas.svg
 │           └── noche-jazz.svg
 └── solucion_referencia/
